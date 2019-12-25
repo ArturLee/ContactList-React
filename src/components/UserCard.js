@@ -15,10 +15,10 @@ export default (props) => (
         <span>Phone</span> <span>{props.phone}</span>
       </div>
       <div className="data">
-        <span>Street</span> <span> {props.location.street.name} {props.location.street.number}</span>
+        <span>Street</span> <span>{props.location.street.name} {props.location.street.number}</span>
       </div>
       <div className="data">
-        <span>City</span> <span> {props.location.city}</span>
+        <span>City</span> <span>{props.location.city}</span>
       </div>
       <div className="data">
         <span>State</span> <span>{props.location.state}</span>

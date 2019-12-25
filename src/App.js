@@ -1,42 +1,13 @@
+/* eslint-disable object-curly-newline */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import UsersData from './components/UsersData';
 import './styles/styles.scss';
 import Spinner from './components/Spinner';
+import { title, userUrl, numberCards, tabs } from './constants';
 
 function App() {
-  const userUrl = 'https://randomuser.me/api/?results=';
-  const numberCards = 120;
-  const tabs = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z',
-  ];
-
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -55,7 +26,7 @@ function App() {
     <div>
       {loading ? (<Spinner />) : (
         <div className="main">
-          <h1 className="title">Contact List</h1>
+          <h1 className="title">{title}</h1>
           <UsersData userList={users} tabs={tabs} />
         </div>
       )}

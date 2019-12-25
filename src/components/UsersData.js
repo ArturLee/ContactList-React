@@ -5,9 +5,9 @@ import React, { useState } from 'react';
 import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
 import uniqid from 'uniqid';
 import UserCard from './UserCard';
+import { tabs } from '../constants';
 
-
-export default function UsersData({ userList, tabs }) {
+export default function UsersData({ userList }) {
   const [showCard, setShowCard] = useState(false);
   const [showUserCard, setShowUserCard] = useState();
   let usersOrderByLastName = [];
@@ -56,7 +56,6 @@ export default function UsersData({ userList, tabs }) {
     </TabLink>
   );
 
-  console.log(showUserCard)
   return (
     <div>
       <Tabs className="tabs">
