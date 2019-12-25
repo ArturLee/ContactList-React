@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ContactList-React/static/css/main.24937033.chunk.css",
+    "main.js": "/ContactList-React/static/js/main.ecfde051.chunk.js",
+    "main.js.map": "/ContactList-React/static/js/main.ecfde051.chunk.js.map",
+    "runtime-main.js": "/ContactList-React/static/js/runtime-main.4579909b.js",
+    "runtime-main.js.map": "/ContactList-React/static/js/runtime-main.4579909b.js.map",
+    "static/js/2.3007698d.chunk.js": "/ContactList-React/static/js/2.3007698d.chunk.js",
+    "static/js/2.3007698d.chunk.js.map": "/ContactList-React/static/js/2.3007698d.chunk.js.map",
+    "index.html": "/ContactList-React/index.html",
+    "precache-manifest.573c50f3c75278e2fab59864cf9a8926.js": "/ContactList-React/precache-manifest.573c50f3c75278e2fab59864cf9a8926.js",
+    "service-worker.js": "/ContactList-React/service-worker.js",
+    "static/css/main.24937033.chunk.css.map": "/ContactList-React/static/css/main.24937033.chunk.css.map",
+    "static/js/2.3007698d.chunk.js.LICENSE": "/ContactList-React/static/js/2.3007698d.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4579909b.js",
+    "static/js/2.3007698d.chunk.js",
+    "static/css/main.24937033.chunk.css",
+    "static/js/main.ecfde051.chunk.js"
+  ]
+}
