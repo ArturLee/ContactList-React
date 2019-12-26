@@ -1,8 +1,6 @@
 .tabs {
     @include center-item;
     margin: auto;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     width: auto;
     display: inline-block;
     margin-right: 30px;
@@ -17,15 +15,17 @@
   
   .tab-link {
     background-color: whitesmoke;
-    margin: 0 0 10px;
     display: inline-block;
     border: 1px 0 solid #aaa;
     border-bottom: 1px solid black;
     border-radius: 5px 5px 0 0;
-    bottom: -10px;
     position: relative;
-    padding: 6px 12px;
+    padding: 0px 8px;
     cursor: pointer;
+    span{
+        font-size: 8px;
+        font-weight: lighter;
+    }
   }
   
   .tab-link-active {
@@ -53,7 +53,7 @@
   }
   
   .tab-content {
-    box-shadow: 0 4px 10px rgba(114, 114, 114, 0.527);
+    box-shadow: 0 5px 10px rgba(114, 114, 114, 0.527);
     background-color: whitesmoke;
     border: 1px solid;
     padding: 15px;

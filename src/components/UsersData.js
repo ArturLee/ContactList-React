@@ -7,6 +7,8 @@ import uniqid from 'uniqid';
 import UserCard from './UserCard';
 import { tabs } from '../constants';
 
+
+
 export default function UsersData({ userList }) {
   const [showCard, setShowCard] = useState(false);
   const [showUserCard, setShowUserCard] = useState();
@@ -44,15 +46,23 @@ export default function UsersData({ userList }) {
   );
 
   const renderUsers = (keyName) => (
-    // eslint-disable-next-line react/jsx-filename-extension
     <TabContent for={keyName} key={uniqid()}>
       {usersOrderByLastName[keyName].map(buttonUsers)}
     </TabContent>
   );
 
+  const getLength = (tabs) => {
+    let tabLenght = 0;
+    if (usersOrderByLastName[tabs]) {
+      tabLenght = usersOrderByLastName[tabs].length;
+      return tabLenght;
+    }
+    return tabLenght;
+  };
+
   const renderTab = (tabs) => (
     <TabLink to={tabs.toUpperCase()} key={tabs} onClick={() => { setShowCard(false); }}>
-      {tabs}
+      <h2>{tabs} <span> {getLength(tabs.toUpperCase())}</span> </h2>
     </TabLink>
   );
 
