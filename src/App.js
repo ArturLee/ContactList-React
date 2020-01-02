@@ -19,7 +19,9 @@ function App() {
       await axios.get(userUrl + numberCards).then((data) => {
         setUsers(data.data.results);
         setLoading(false);
-      }).catch((err) => console.log(err));
+      }).catch((err) => (
+        { err }
+      ));
     }
     fetchAPI();
   }, []);

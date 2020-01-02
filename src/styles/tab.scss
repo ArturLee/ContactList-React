@@ -1,85 +1,84 @@
 .tabs {
-    @include center-item;
-    margin: auto;
-    width: auto;
-    display: inline-block;
-    margin-right: 30px;
-    vertical-align: top;
-    hr{
-        border: none;
-        height: 1px;
-        color: rgba(128, 128, 128, 0.473);
-        background-color: rgba(128, 128, 128, 0.473);
-    }
-  }
-  
-  .tab-link {
-    box-shadow: 0 0px 5px rgba(114, 114, 114, 0.527);
-    background-color: whitesmoke;
-    margin: 0 0 1px;
-    display: inline-block;
-    border: 1px 0 solid #aaa;
-    border-bottom: 1px solid black;
-    border-radius: 5px 5px 0 0;
-    position: relative;
-    padding: 0px 0px;
-    width: 45px;
-    cursor: pointer;
-    span{
-        font-size: 8px;
-        font-weight: lighter;
-    }
-  }
-  
-  .tab-link-active {
-    background: #fff;
-    border-color: #aaa;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .tab-link:hover {
-    box-shadow: 0 0 5px rgb(114, 114, 114);
-  }
-  
-  .tab-link:focus {
-    border-color: rgb(70, 70, 70);
-    outline: none;
-  }
-  
-  .tab-link:focus:after {
-    position: absolute;
-    height: 5px;
-    left: -4px;
-    right: -4px;
-    bottom: -5px;
-    background: #fff;
-  }
-  
-  .tab-content {
-    box-shadow: 0 2px 5px rgba(114, 114, 114, 0.527);
-    background-color: whitesmoke;
-    border: 1px solid;
-    padding: 15px;
-    border-top: 1px solid transparent;
-    border-radius: 0 0 5px 5px;
-  }
-  
-  .tab-content-visible {
-    display: block;
-  }
-
-  .contactBtn {
-    background-color: transparent;
+  @include center-item;
+  margin: auto;
+  width: auto;
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+  hr {
     border: none;
-    cursor: pointer;
-    height: auto;
-    text-align: center;
+    height: 1px;
+    color: rgba(128, 128, 128, 0.473);
+    background-color: rgba(128, 128, 128, 0.473);
   }
-  
-  .contactBtn:hover {
-    color: rgb(114, 114, 114);
+}
+
+.tab-link {
+  box-shadow: 0 0px 5px rgba(114, 114, 114, 0.527);
+  background-color: whitesmoke;
+  margin: 0 0 1px;
+  display: inline-block;
+  border: 1px 0 solid #aaa;
+  border-bottom: 1px solid black;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  padding: 0px 0px;
+  width: 45px;
+  cursor: pointer;
+  span {
+    font-size: 8px;
+    font-weight: lighter;
   }
-  .contactBtn:focus {
-    outline: 0;
-  }
-  
+}
+
+.tab-link-active {
+  background: #fff;
+  border-color: #aaa;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-link:hover {
+  box-shadow: 0 0 5px rgb(114, 114, 114);
+}
+
+.tab-link:focus {
+  border-color: rgb(70, 70, 70);
+  outline: none;
+}
+
+.tab-link:focus:after {
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.tab-content {
+  box-shadow: 0 2px 5px rgba(114, 114, 114, 0.527);
+  background-color: whitesmoke;
+  border: 1px solid;
+  padding: 15px;
+  border-top: 1px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.tab-content-visible {
+  display: block;
+}
+
+.contactBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  text-align: center;
+}
+
+.contactBtn:hover {
+  color: rgb(114, 114, 114);
+}
+.contactBtn:focus {
+  outline: 0;
+}
