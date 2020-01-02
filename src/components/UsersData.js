@@ -62,13 +62,9 @@ export default function UsersData({ userList }) {
 
   const renderTab = (tab) => (
     <TabLink to={tab.toUpperCase()} key={tab} onClick={() => { setShowCard(false); }}>
-      <h2>
-        {tab}
-        {' '}
-        <span>
-          {getLength(tab.toUpperCase())}
-        </span>
-      </h2>
+      <h2>{tab}</h2> 
+      <br/>
+      <span>{getLength(tab.toUpperCase())}</span>
     </TabLink>
   );
 

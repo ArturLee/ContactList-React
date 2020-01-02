@@ -14,58 +14,57 @@
 }
 
 .tab-link {
-  box-shadow: 0 0px 5px rgba(114, 114, 114, 0.527);
-  background-color: whitesmoke;
-  margin: 0 0 1px;
   display: inline-block;
-  border: 1px 0 solid #aaa;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #aaa;
   border-radius: 5px 5px 0 0;
   position: relative;
-  padding: 0px 0px;
   width: 45px;
   cursor: pointer;
+  h2{
+    float: left;
+    margin:auto;
+  }
   span {
+    float: right;
     font-size: 8px;
     font-weight: lighter;
   }
 }
 
 .tab-link-active {
-  background: #fff;
+  background-color: whitesmoke;
   border-color: #aaa;
   border-radius: 5px 5px 0 0;
+  outline: none;
+  border-bottom: 1px solid transparent;
 }
 
 .tab-link:hover {
-  box-shadow: 0 0 5px rgb(114, 114, 114);
+  background-color: whitesmoke;
 }
 
 .tab-link:focus {
-  border-color: rgb(70, 70, 70);
+  border-color: #aaa;
   outline: none;
+  border-bottom: 1px solid transparent;
 }
 
 .tab-link:focus:after {
   position: absolute;
-  height: 5px;
-  left: -4px;
-  right: -4px;
-  bottom: -5px;
-  background: #fff;
 }
 
 .tab-content {
-  box-shadow: 0 2px 5px rgba(114, 114, 114, 0.527);
   background-color: whitesmoke;
+  margin-top: -1.5px;
   border: 1px solid;
   padding: 15px;
-  border-top: 1px solid transparent;
   border-radius: 0 0 5px 5px;
+  border-color: #aaa;
 }
 
 .tab-content-visible {
   display: block;
+  border-top: 1px solid transparent;
 }
 
 .contactBtn {
@@ -80,5 +79,5 @@
   color: rgb(114, 114, 114);
 }
 .contactBtn:focus {
-  outline: 0;
+  outline: none;
 }
