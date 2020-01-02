@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ContactList-React/static/css/main.8a40a4c9.chunk.css",
-    "main.js": "/ContactList-React/static/js/main.fb58bc7c.chunk.js",
-    "main.js.map": "/ContactList-React/static/js/main.fb58bc7c.chunk.js.map",
+    "main.css": "/ContactList-React/static/css/main.7542276e.chunk.css",
+    "main.js": "/ContactList-React/static/js/main.dcfe7d9f.chunk.js",
+    "main.js.map": "/ContactList-React/static/js/main.dcfe7d9f.chunk.js.map",
     "runtime-main.js": "/ContactList-React/static/js/runtime-main.4579909b.js",
     "runtime-main.js.map": "/ContactList-React/static/js/runtime-main.4579909b.js.map",
     "static/js/2.3007698d.chunk.js": "/ContactList-React/static/js/2.3007698d.chunk.js",
     "static/js/2.3007698d.chunk.js.map": "/ContactList-React/static/js/2.3007698d.chunk.js.map",
     "index.html": "/ContactList-React/index.html",
-    "precache-manifest.4315930858965ba4614a0f02ceeb6d95.js": "/ContactList-React/precache-manifest.4315930858965ba4614a0f02ceeb6d95.js",
+    "precache-manifest.96c7940a5e9b41ea12cb7cf67210a863.js": "/ContactList-React/precache-manifest.96c7940a5e9b41ea12cb7cf67210a863.js",
     "service-worker.js": "/ContactList-React/service-worker.js",
-    "static/css/main.8a40a4c9.chunk.css.map": "/ContactList-React/static/css/main.8a40a4c9.chunk.css.map",
+    "static/css/main.7542276e.chunk.css.map": "/ContactList-React/static/css/main.7542276e.chunk.css.map",
     "static/js/2.3007698d.chunk.js.LICENSE": "/ContactList-React/static/js/2.3007698d.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.4579909b.js",
     "static/js/2.3007698d.chunk.js",
-    "static/css/main.8a40a4c9.chunk.css",
-    "static/js/main.fb58bc7c.chunk.js"
+    "static/css/main.7542276e.chunk.css",
+    "static/js/main.dcfe7d9f.chunk.js"
   ]
 }
