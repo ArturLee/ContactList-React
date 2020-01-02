@@ -1,13 +1,9 @@
-/* eslint-disable no-shadow */
-/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
 import uniqid from 'uniqid';
 import UserCard from './UserCard';
 import { tabs } from '../constants';
-
-
 
 export default function UsersData({ userList }) {
   const [showCard, setShowCard] = useState(false);
@@ -38,7 +34,11 @@ export default function UsersData({ userList }) {
   const buttonUsers = (user) => (
     <div key={uniqid()}>
       <button className="contactBtn" type="button" onClick={() => { setShowCard(true); setShowUserCard(user); }}>
-        <h3>{user.name.last} ,{user.name.first}
+        <h3>
+          {user.name.first}
+          ,
+          {'  '}
+          {user.name.last.toUpperCase()}
         </h3>
       </button>
       <hr />
@@ -51,18 +51,24 @@ export default function UsersData({ userList }) {
     </TabContent>
   );
 
-  const getLength = (tabs) => {
+  const getLength = (tab) => {
     let tabLenght = 0;
-    if (usersOrderByLastName[tabs]) {
-      tabLenght = usersOrderByLastName[tabs].length;
+    if (usersOrderByLastName[tab]) {
+      tabLenght = usersOrderByLastName[tab].length;
       return tabLenght;
     }
     return tabLenght;
   };
 
-  const renderTab = (tabs) => (
-    <TabLink to={tabs.toUpperCase()} key={tabs} onClick={() => { setShowCard(false); }}>
-      <h2>{tabs} <span> {getLength(tabs.toUpperCase())}</span> </h2>
+  const renderTab = (tab) => (
+    <TabLink to={tab.toUpperCase()} key={tab} onClick={() => { setShowCard(false); }}>
+      <h2>
+        {tab}
+        {' '}
+        <span>
+          {getLength(tab.toUpperCase())}
+        </span>
+      </h2>
     </TabLink>
   );
 
