@@ -15,13 +15,7 @@ export default function UsersData({ userList }) {
     userList.sort((a, b) => {
       const nameA = a.name.last.toUpperCase();
       const nameB = b.name.last.toUpperCase();
-      if (nameA < nameB) {
-        return -1;
-      }
-      if (nameA > nameB) {
-        return 1;
-      }
-      return 0;
+      return nameA - nameB;
     });
     // reduce into accumulator
     usersOrderByLastName = userList.reduce((acc, c) => {
@@ -50,7 +44,7 @@ export default function UsersData({ userList }) {
       {usersOrderByLastName[keyName].map(buttonUsers)}
     </TabContent>
   );
-
+  
   const getLength = (tab) => {
     let tabLenght = 0;
     if (usersOrderByLastName[tab]) {
